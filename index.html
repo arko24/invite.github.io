@@ -19,13 +19,6 @@
     <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
-<!--
-    
-TemplateMo 557 Grad School
-
-https://templatemo.com/tm-557-grad-school
-
--->
   </head>
 
 <body>
@@ -49,7 +42,7 @@ https://templatemo.com/tm-557-grad-school
         <div class="caption">
               <div class="et_pb_text_inner">
                 <h2><em>Selamat Datang</em></h2>
-                <h2><strong>{NAAM}</strong></h2>
+                <h2><strong>{NAMA}</strong></h2>
               </div>    
               <div class="main-button">
                   <div class="scroll-to-section"><a href="#section2">Mulai Bergabung</a></div>
@@ -129,11 +122,11 @@ https://templatemo.com/tm-557-grad-school
       window.addEventListener("load",function() {
         // uncomment next line
        const url = new URL(location.href)
-       let naam = url.searchParams.get("n")
-       naam = naam ? naam.toProperCase() : "";
+       let nama = url.searchParams.get("n")
+       nama = nama ? nama.toProperCase() : "";
        document.querySelectorAll('.et_pb_text_inner h2 strong').forEach(tag => {
        let text = tag.innerText;
-       if (text.indexOf('{NAAM}') !=-1) tag.innerText = text.replace("{NAAM}",naam);
+       if (text.indexOf('{NAMA}') !=-1) tag.innerText = text.replace("{NAMA}",nama);
          })
        })
  </script>
